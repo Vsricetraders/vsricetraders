@@ -3,243 +3,197 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>VS Rice Traders — Premium Indian Rice Exporter</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <title>VS Rice Traders — Premium Export Quality Rice</title>
+  <meta name="description" content="VS Rice Traders | 1121 Steam/Sella Basmati & IR64 Raw/Parboiled — Export from Uttar Pradesh, India" />
   <style>
-    :root{
-      --accent:#0b6b5a;
-      --accent-2:#0f8c6a;
-      --muted:#6b7280;
-      --bg:#f7faf9;
-      --card:#ffffff;
-      --max-w:1100px;
-      font-family:Inter, system-ui, Arial, sans-serif;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:#0f1724;line-height:1.5}
-    .container{max-width:var(--max-w);margin:0 auto;padding:26px}
-    header{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#fff}
-    .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 24px}
-    .brand{display:flex;gap:12px;align-items:center}
-    .logo{width:54px;height:54px;border-radius:6px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700}
-    nav{display:flex;gap:14px}
-    nav a{color:rgba(255,255,255,.95);text-decoration:none;font-weight:600;font-size:15px}
-    .cta-header{background:#fff;color:var(--accent);padding:8px 12px;border-radius:8px;font-weight:700}
+    /* Basic Reset */
+    *{box-sizing:border-box;margin:0;padding:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+    body{background:#fbfbfb;color:#1c2430;line-height:1.45}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Header */
+    header{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:56px;width:56px;object-fit:cover;border-radius:8px}
+    .brand{font-weight:700;font-size:20px;color:#0b2447}
+    nav{display:flex;gap:18px}
+    nav a{font-weight:600;padding:8px 12px;border-radius:8px;color:#0b2447;opacity:.85}
+
     /* Hero */
-    .hero{padding:48px 24px;display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
-    .hero-left h1{font-size:32px;margin:0 0 12px}
-    .hero-left p{color:var(--muted);margin:0 0 18px}
-    .btn{background:var(--accent);color:#fff;padding:12px 18px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block}
-    .btn.secondary{background:#fff;color:var(--accent);border:2px solid rgba(255,255,255,.1);padding:10px 16px;margin-left:10px}
-    .hero-right{background:url('https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?q=80&w=800&auto=format&fit=crop&crop=top') center/cover;border-radius:12px;height:300px}
-    /* Cards */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:22px}
-    .card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(8,15,20,.05)}
-    .card h3{margin:0 0 6px}
-    .muted{color:var(--muted);font-size:14px}
-    /* Quality box */
-    .quality{display:flex;gap:18px;margin-top:26px;align-items:stretch;flex-wrap:wrap}
-    .quality .q{flex:1;min-width:220px;background:linear-gradient(180deg,#fff,#fbfffb);padding:18px;border-radius:10px;border-left:4px solid var(--accent)}
-    .q strong{display:block;font-size:18px;margin-bottom:6px}
-    /* Products */
-    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}
-    .product{background:var(--card);border-radius:10px;padding:12px;display:flex;gap:12px;align-items:center}
-    .p-thumb{width:84px;height:84px;border-radius:8px;background:#eef7f4;display:flex;align-items:center;justify-content:center;color:var(--accent);font-weight:700}
-    .p-info h4{margin:0 0 6px}
-    .small{font-size:13px;color:var(--muted)}
-    /* Gallery */
-    .gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
-    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px}
-    /* Contact */
-    .contact{display:grid;grid-template-columns:1fr 360px;gap:18px;margin-top:26px}
-    form{background:var(--card);padding:16px;border-radius:10px}
-    input,textarea,select{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef0;margin-top:10px}
-    footer{padding:18px 24px;margin-top:26px;background:#0b1320;color:#ddd}
-    .flex{display:flex;gap:12px;align-items:center}
-    /* responsive */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr; padding:28px}
-      .cards, .products{grid-template-columns:1fr}
-      .contact{grid-template-columns:1fr}
-      nav{display:none}
-      .hero-right{height:220px}
+    .hero{
+      display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;
+      margin:18px 0;padding:28px;border-radius:14px;background:linear-gradient(180deg,#ffffff,#f5f7fb);
+      box-shadow:0 8px 30px rgba(16,24,40,.06);
     }
+    .hero-left h1{font-size:36px;color:#07203a;margin-bottom:8px;letter-spacing:1px}
+    .sub{color:#b66f1e;font-weight:700;margin-bottom:16px}
+    .hero-left p{color:#374151;margin-bottom:18px}
+    .cta{display:flex;gap:12px}
+    .btn{padding:12px 18px;border-radius:10px;font-weight:700;cursor:pointer}
+    .btn-primary{background:#0b2447;color:#fff;border:none}
+    .btn-ghost{background:transparent;border:2px solid #0b2447;color:#0b2447}
+
+    /* animated hero image box */
+    .hero-right{position:relative;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;height:320px}
+    .hero-right img{width:100%;height:100%;object-fit:cover;transform:scale(1);transition:transform .9s ease}
+    .hero-right:hover img{transform:scale(1.03)}
+    .badge{position:absolute;left:14px;top:14px;background:#0b2447;color:#fff;padding:8px 12px;border-radius:8px;font-weight:700}
+
+    /* Products grid */
+    .products{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:26px 0}
+    .card{background:#fff;border-radius:12px;padding:14px;box-shadow:0 8px 20px rgba(16,24,40,.06);text-align:center}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:8px;margin-bottom:10px}
+    .card h3{color:#07203a;margin-bottom:6px}
+    .small{font-size:14px;color:#475569}
+
+    /* Testimonial slider */
+    .testi-wrap{margin:30px 0;padding:22px;border-radius:12px;background:linear-gradient(90deg,#fff,#f8fbff);overflow:hidden}
+    .testi{display:flex;gap:20px;align-items:center}
+    .testi-photo{width:68px;height:68px;border-radius:50%;background:#e6eefc;display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b2447}
+    .testi-text{max-width:900px}
+    .quote{font-style:italic;color:#0f1724;padding:6px 0}
+    .name{font-weight:700;color:#0b2447}
+
+    /* Simple sliding effect (auto) */
+    @keyframes slideTesti {
+      0%{transform:translateY(0)}
+      33%{transform:translateY(-84px)}
+      66%{transform:translateY(-168px)}
+      100%{transform:translateY(0)}
+    }
+    .testi-list{display:block;height:84px;overflow:hidden}
+    .testi-list > div{animation:slideTesti 12s linear infinite}
+
+    /* Footer/contact */
+    footer{margin-top:30px;border-top:1px solid #eef2f7;padding:22px 0;display:flex;justify-content:space-between;align-items:center}
+    .contact{display:flex;gap:12px;align-items:center}
+    .contact a{display:inline-flex;gap:10px;align-items:center;padding:10px 12px;border-radius:10px;background:#fff;box-shadow:0 6px 18px rgba(16,24,40,.04)}
+    .contact .wh{background:#25D366;color:#fff;padding:8px;border-radius:10px}
+
+    /* Responsive */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr; padding:18px}
+      .products{grid-template-columns:repeat(2,1fr)}
+      .hero-right{height:260px}
+    }
+    @media (max-width:600px){
+      .products{grid-template-columns:1fr}
+      nav{display:none}
+      .logo img{height:44px;width:44px}
+      .hero-left h1{font-size:28px}
+      .hero-right{height:200px}
+    }
+
+    /* small utilities */
+    .muted{color:#6b7280}
+    .center{text-align:center}
   </style>
 </head>
 <body>
-  <header>
-    <div class="container topbar">
-      <div class="brand">
-        <div class="logo">VS</div>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="/assets/logo.png" alt="VS Rice Traders logo" />
         <div>
-          <div style="font-weight:700">VS Rice Traders</div>
-          <div style="font-size:13px;color:rgba(255,255,255,.9)">Premium Indian Rice Exporter</div>
+          <div class="brand">VS RICE TRADERS</div>
+          <div class="muted">Export Quality Rice • Uttar Pradesh, India</div>
         </div>
       </div>
       <nav>
         <a href="#products">Products</a>
-        <a href="#quality">Quality</a>
-        <a href="#certs">Certs</a>
+        <a href="#testimonials">Testimonials</a>
         <a href="#contact">Contact</a>
       </nav>
-      <div class="cta-header">+91 93362 58808</div>
-    </div>
-    <div class="container hero">
+    </header>
+
+    <section class="hero" aria-label="Hero">
       <div class="hero-left">
-        <h1>Exporting Premium 1121 Sella, IR64 Parboiled & Steam Basmati</h1>
-        <p>Bulk rice supplier from Uttar Pradesh — fumigation, phytosanitary certificate (PSC), & custom packing available. FOB / CFR / CIF shipping terms.</p>
+        <div class="sub">EXPORT QUALITY RICE</div>
+        <h1>1121 Steam / Sella Basmati • IR64 Raw / Parboiled</h1>
+        <p>Premium long-grain rice for international markets — packed in 50 kg PP bags. MOQ 25 MT. Fumigation & PSC available on request.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="/assets/catalog.pdf" download>Download Catalog</a>
+          <a class="btn btn-ghost" href="#contact">Get Quote</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="badge">MOQ: 25 MT</div>
+        <img src="/assets/flyer.jpg" alt="VS Rice Traders - quality rice" />
+      </div>
+    </section>
+
+    <section id="products" class="products" aria-label="Our products">
+      <div class="card">
+        <img src="/assets/basmati.jpg" alt="1121 Steam Basmati" />
+        <h3>1121 STEAM / SELLA BASMATI</h3>
+        <div class="small">Long grain, premium steam/sella processed for aroma & elongation.</div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/ir64.jpg" alt="IR64 Raw / Parboiled Rice" />
+        <h3>IR64 RAW / PARBOILED</h3>
+        <div class="small">Industrial-quality IR64 — Raw or parboiled options (5% / 25% specs available).</div>
+      </div>
+
+      <div class="card">
+        <img src="/assets/hand.jpg" alt="Rice sample in hand" />
+        <h3>PACKING</h3>
+        <div class="small">50 kg PP bags — tight sealing, fumigation available, properly stacked for export.</div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testi-wrap">
+      <div class="center" style="margin-bottom:10px">
+        <strong style="font-size:18px;color:#07203a">Trusted by importers</strong>
+      </div>
+
+      <div class="testi-list">
         <div>
-          <a class="btn" href="#contact">Request Quote</a>
-          <a class="btn secondary" href="#products">Our Products</a>
-        </div>
-
-        <div class="cards" aria-hidden="true">
-          <div class="card">
-            <h3>Min. Quantity</h3>
-            <div class="muted">10 MT per shipment (negotiable)</div>
+          <div class="testi">
+            <div class="testi-photo">G</div>
+            <div class="testi-text">
+              <div class="quote">"Great packing and consistent quality — timely shipment to UAE port." </div>
+              <div class="name">— Global Buyer, Dubai</div>
+            </div>
           </div>
-          <div class="card">
-            <h3>Payment Terms</h3>
-            <div class="muted">70% Advance + 30% at B/L or L/C negotiable</div>
+
+          <div class="testi" style="margin-top:12px">
+            <div class="testi-photo">M</div>
+            <div class="testi-text">
+              <div class="quote">"Good communications, sample matched the bulk quality. Recommended supplier."</div>
+              <div class="name">— Importer, Jeddah</div>
+            </div>
           </div>
-          <div class="card">
-            <h3>Packing</h3>
-            <div class="muted">PP Bags / Non-woven / Bulk Jumbo Bags</div>
-          </div>
-        </div>
 
-      </div>
-      <div class="hero-right" role="img" aria-label="Rice sacks image"></div>
-    </div>
-  </header>
-
-  <main class="container">
-    <section id="about" style="margin-top:14px">
-      <h2>About Us</h2>
-      <p class="muted">VS Rice Traders — reliable supplier of 1121 Sella, IR64 parboiled and steam/sella basmati. We source direct from mills, ensure quality checks and export-ready documentation for Dubai, KSA, Bangladesh and more.</p>
-    </section>
-
-    <section id="quality" style="margin-top:18px">
-      <h2>Quality Parameters</h2>
-      <div class="quality">
-        <div class="q">
-          <strong>Purity</strong>
-          <div class="small">Typical: ≥ 98.0% (per sample lot)</div>
-        </div>
-        <div class="q">
-          <strong>Foreign Matter</strong>
-          <div class="small">Typically ≤ 0.3% (separately reported)</div>
-        </div>
-        <div class="q">
-          <strong>Broken / Damaged</strong>
-          <div class="small">Usually ≤ 2.0% (per MT basis)</div>
-        </div>
-      </div>
-    </section>
-
-    <section id="products">
-      <h2 style="margin-top:20px">Top Products</h2>
-      <div class="products">
-        <div class="product">
-          <div class="p-thumb">1121</div>
-          <div class="p-info">
-            <h4>1121 Steam / Sella Basmati</h4>
-            <div class="small">Aroma-rich long grain, steamed/sella processed. Packing: 50kg PP bag.</div>
-          </div>
-        </div>
-
-        <div class="product">
-          <div class="p-thumb">IR64</div>
-          <div class="p-info">
-            <h4>IR64 Parboiled / Raw</h4>
-            <div class="small">Medium grain parboiled & raw variants. Ideal for bulk buyers and milling partners.</div>
-          </div>
-        </div>
-
-        <div class="product">
-          <div class="p-thumb">NON</div>
-          <div class="p-info">
-            <h4>Non-Basmati / Sella</h4>
-            <div class="small">Economical parboiled rice — suitable for large-scale buyers.</div>
+          <div class="testi" style="margin-top:12px">
+            <div class="testi-photo">A</div>
+            <div class="testi-text">
+              <div class="quote">"Professional export documents and on-time delivery to container freight station."</div>
+              <div class="name">— Trader, Bangladesh</div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="certs">
-      <h2 style="margin-top:22px">Export Services & Certificates</h2>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
-        <div style="background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(8,12,20,.04)">Fumigation available</div>
-        <div style="background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(8,12,20,.04)">Phytosanitary Certificate (PSC)</div>
-        <div style="background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(8,12,20,.04)">Lab Test / Quality Report</div>
-        <div style="background:#fff;padding:12px;border-radius:8px;box-shadow:0 6px 16px rgba(8,12,20,.04)">Custom Packing / Labeling</div>
-      </div>
-    </section>
-
-    <section class="gallery" style="margin-top:18px">
-      <img src="https://images.unsplash.com/photo-1583586150407-7a6e9426ad90?q=80&w=800&auto=format&fit=crop&crop=top" alt="rice 1">
-      <img src="https://images.unsplash.com/photo-1604908177522-3f9c2a872b6d?q=80&w=800&auto=format&fit=crop&crop=top" alt="rice 2">
-    </section>
-
-    <section id="contact" class="contact">
+    <footer id="contact">
       <div>
-        <h2>Request Quote / Contact</h2>
-        <form onsubmit="event.preventDefault(); sendMail()">
-          <input id="name" placeholder="Your name" required>
-          <input id="company" placeholder="Company">
-          <input id="email" type="email" placeholder="Email" required>
-          <input id="phone" placeholder="Phone / WhatsApp" required>
-          <select id="product">
-            <option>1121 Steam / Sella Basmati</option>
-            <option>IR64 Parboiled</option>
-            <option>Non-Basmati / Parboiled</option>
-          </select>
-          <textarea id="msg" rows="4" placeholder="Quantity, destination port, packing (e.g. 50kg PP), preferred payment term"></textarea>
-          <div style="margin-top:10px;display:flex;gap:8px">
-            <button class="btn" type="submit">Send Enquiry</button>
-            <a class="btn secondary" href="mailto:vaibhav.rato@gmail.com">Email: vaibhav.rato@gmail.com</a>
-          </div>
-        </form>
-        <p class="muted" style="margin-top:10px">Mobile: <strong>+91 93362 58808</strong> • Location: Uttar Pradesh, India</p>
+        <div style="font-weight:800;font-size:18px;color:#07203a">Contact & Quick Info</div>
+        <div class="muted" style="margin:8px 0">VS Rice Traders — Uttar Pradesh, India</div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:8px">
+          <a class="contact" href="tel:+9193362588808"><span class="wh">📞</span> +91 93362 58808</a>
+          <a class="contact" href="mailto:vaibhav.rato@gmail.com">✉️ vaibhav.rato@gmail.com</a>
+          <a class="contact" href="/assets/catalog.pdf" download>📥 Download Catalog</a>
+        </div>
       </div>
 
-      <div style="background:var(--card);padding:16px;border-radius:10px">
-        <h3>Quick Info</h3>
-        <p class="muted">Min order, packing, payment & shipping can be discussed after sample confirmation.</p>
-        <ul class="small">
-          <li>Sample: 1–3 kg couriered (buyer pays courier or negotiated)</li>
-          <li>Lab test / QC report available on request</li>
-          <li>Fumigation and PSC arranged on buyer request</li>
-        </ul>
+      <div class="center" style="text-align:right">
+        <img src="/assets/logo.png" alt="VS Rice Traders logo" style="height:72px;border-radius:8px;margin-bottom:6px" />
+        <div class="muted">© VS Rice Traders</div>
       </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
-      <div>
-        <div style="font-weight:700">VS Rice Traders</div>
-        <div style="font-size:13px;color:#bcd">Email: vaibhav.rato@gmail.com • Phone: +91 93362 58808</div>
-      </div>
-      <div class="muted small">© <span id="year"></span> VS Rice Traders — All rights reserved</div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').innerText = new Date().getFullYear();
-
-    function sendMail(){
-      const name=document.getElementById('name').value.trim();
-      const email=document.getElementById('email').value.trim();
-      const phone=document.getElementById('phone').value.trim();
-      const product=document.getElementById('product').value;
-      const msg=document.getElementById('msg').value.trim();
-      if(!name||!email||!phone){ alert('Please fill name, email & phone'); return; }
-      const subject = encodeURIComponent('Export enquiry — ' + product + ' from ' + name);
-      const body = encodeURIComponent(`Name: ${name}\nCompany: ${document.getElementById('company').value}\nPhone: ${phone}\nEmail: ${email}\nProduct: ${product}\n\nMessage:\n${msg}`);
-      window.location.href = `mailto:vaibhav.rato@gmail.com?subject=${subject}&body=${body}`;
-    }
-  </script>
+    </footer>
+  </div>
 </body>
-                                      </html>
+  </html>
