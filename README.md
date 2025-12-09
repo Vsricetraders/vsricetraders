@@ -1,16 +1,47 @@
-## Hi there 👋
+# VS Rice Traders — Premium Indian Rice Exporter 🇮🇳
 
-<!--
-**Vsricetraders/vsricetraders** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Specializing in 1121 Steam / Sella Basmati & IR64 Raw / Parboiled Rice**
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 📦 Products We Supply
+- **1121 Steam Basmati Rice**
+- **1121 Sella Basmati Rice**
+- **IR64 Raw Rice**
+- **IR64 Parboiled Rice**
+- **Non-Basmati Varieties (5%–25% broken)**
+
+Packing: 25kg / 50kg PP Bags  
+MOQ: 10 MT  
+Quality: Fumigation + SGS + Lab Report available  
+
+---
+
+## 🌍 Export Countries (Target)
+UAE | Saudi Arabia | Qatar | Oman | Bahrain | Vietnam | Bangladesh | Africa Region
+
+---
+
+## 📞 Contact Details
+**Owner:** Vaibhav Singh  
+**WhatsApp:** +91 9336258808  
+**Email:** vaibhav.rato@gmail.com  
+
+---
+
+## 🔗 Website
+Official website:  
+https://vsricetraders.github.io/vsricetraders/
+
+---
+
+## 📑 Documents Available
+- Fumigation Certificate  
+- Packing List  
+- Quality Lab Report  
+- Proforma Invoice  
+- Commercial Invoice  
+
+---
+
+**Thank you for visiting VS Rice Traders!**
