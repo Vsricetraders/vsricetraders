@@ -3,200 +3,100 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>VS Rice Traders — Premium Export Rice</title>
-
-  <style>
-    :root{
-      --navy:#07243b; --gold:#c49a48; --muted:#6b7b86; --card:#ffffff; --bg:#f6f7f8;
-      --radius:14px;
-      --hero-height:min(72vh,680px);
-      --shadow: 0 6px 24px rgba(2,18,28,0.08);
-      font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg)}
-    a{text-decoration:none;color:var(--navy)}
-    .container{max-width:1100px;margin:0 auto;padding:24px}
-
-    /* NAV */
-    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand img{height:56px;width:56px;object-fit:contain;border-radius:8px;background:#fff;padding:6px}
-    nav{display:flex;gap:18px;align-items:center}
-    .btn{background:var(--navy);color:#fff;padding:10px 16px;border-radius:10px;font-weight:600}
-    .btn.alt{background:transparent;border:2px solid var(--navy);color:var(--navy)}
-
-    /* HERO */
-    .hero{display:grid;grid-template-columns:1fr 460px;gap:28px;align-items:center;padding:28px 0}
-    .hero-left h1{font-size:clamp(28px,5vw,44px);margin:0 0 12px;color:var(--navy)}
-    .hero-left p{color:var(--muted);margin:0 0 20px}
-    .hero-cta{display:flex;gap:12px;flex-wrap:wrap}
-    .hero-stats{display:flex;gap:12px;margin-top:14px}
-    .stat{background:#fff;padding:10px 12px;border-radius:10px;box-shadow:var(--shadow);text-align:center;min-width:110px}
-
-    .hero-right .image-frame{
-      height:var(--hero-height);
-      border-radius:20px;
-      overflow:hidden;box-shadow:var(--shadow);
-      display:flex;align-items:center;justify-content:center;background:#fff;
-    }
-    .hero-right img{
-      width:100%;height:100%;object-fit:cover;
-      transition:transform .9s ease;
-    }
-    .hero-right:hover img{transform:scale(1.03)}
-
-    .wave{height:40px;margin-top:-8px}
-
-    /* PRODUCTS */
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin:28px 0}
-    .card{background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)}
-    .card img{height:120px;object-fit:cover;border-radius:8px;width:100%}
-
-    /* Testimonials */
-    .testimonials{background:#fff;padding:22px;border-radius:16px;box-shadow:var(--shadow)}
-    .quote{font-style:italic;color:var(--muted)}
-
-    footer{margin-top:36px;padding:24px 0;border-top:1px solid #e6eaee;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap}
-  </style>
+  <title>VS Rice Traders — Home</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
-
 <body>
   <div class="container">
-
-    <!-- NAV -->
-    <header>
+    <header class="header">
       <div class="brand">
-        <img src="assets/logo.png" alt="VS Rice Traders logo" />
+        <img src="assets/logo.png" alt="VS Rice Traders" />
         <div>
           <div style="font-weight:800;color:var(--navy)">VS RICE TRADERS</div>
-          <div style="font-size:12px;color:var(--muted)">Premium Exporter — 1121 / IR64</div>
+          <div style="font-size:13px;color:var(--muted)">Uttar Pradesh, India — Exporter</div>
         </div>
       </div>
-
-      <nav>
-        <a class="btn alt" href="#products">Products</a>
-        <a class="btn" href="#contact">Contact</a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+        <a class="cta" href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <!-- HERO -->
     <section class="hero">
-      <div class="hero-left">
-        <h1>Export Quality Rice from <span style="color:var(--gold)">Uttar Pradesh</span></h1>
-        <p>1121 Steam / Sella Basmati & IR64 Raw / Parboiled — moisture-controlled & export-ready rice.</p>
-
-        <div class="hero-cta">
-          <a class="btn" href="tel:+919336258808">Call / WhatsApp +91 93362 58808</a>
-          <a class="btn alt" href="mailto:vaibhav.rato@gmail.com">Email Us</a>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat"><strong>MOQ</strong><div style="font-size:18px;color:var(--navy)">25 MT</div></div>
-          <div class="stat"><strong>Packing</strong><div style="font-size:18px;color:var(--navy)">50 kg PP</div></div>
-          <div class="stat"><strong>Fumigation</strong><div style="font-size:18px;color:var(--navy)">Yes</div></div>
-        </div>
-      </div>
-
-      <div class="hero-right">
-        <div class="image-frame">
-          <img src="assets/basmati1.jpg" alt="1121 Steam Basmati" />
-        </div>
-      </div>
-    </section>
-
-    <!-- wave -->
-    <div class="wave">
-      <svg viewBox="0 0 1200 120" preserveAspectRatio="none" style="width:100%;height:100%">
-        <path d="M0,0 C300,100 900,0 1200,100 L1200,0 L0,0 Z" fill="#fff"></path>
-      </svg>
-    </div>
-
-    <!-- PRODUCTS -->
-    <section id="products">
-      <h2 style="margin:0 0 8px;color:var(--navy)">Our Products</h2>
-
-      <div class="grid">
+      <div>
         <div class="card">
-          <img src="assets/basmati1.jpg" />
-          <h3>1121 STEAM / SELLA BASMATI</h3>
-          <p>Aromatic long grain with premium elongation.</p>
-        </div>
+          <h1>Premium Indian Rice — 1121 & IR64</h1>
+          <p class="small">1121 Steam / Sella Basmati and IR64 Raw / Parboiled — export quality, properly packed & fumigated.</p>
 
-        <div class="card">
-          <img src="assets/basmati2.jpg" />
-          <h3>1121 SELLA BASMATI</h3>
-          <p>Steam / Sella processed for consistent color.</p>
-        </div>
+          <div style="display:flex;gap:12px;flex-wrap:wrap">
+            <a class="nav cta" href="contact.html">WhatsApp: +91 93362 58808</a>
+            <a class="nav" href="products.html">See Products</a>
+          </div>
 
-        <div class="card">
-          <img src="assets/ir64.jpg" />
-          <h3>IR64 RAW / PARBOILED</h3>
-          <p>Available in 5% & 25% specifications.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS -->
-    <section class="testimonials">
-      <h3 style="margin:0;color:var(--navy)">Trusted by Importers</h3>
-
-      <div style="margin-top:14px">
-        <div id="testWrap" style="overflow:hidden">
-          <div id="testList" style="display:flex;gap:12px;transition:transform .6s ease">
-            <div style="min-width:320px;background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)">
-              <strong>Dubai Buyer</strong>
-              <div class="quote">“Good communication and timely shipment.”</div>
+          <div style="margin-top:14px;display:flex;gap:12px">
+            <div style="background:#fff;padding:10px;border-radius:10px;box-shadow:var(--shadow)">
+              <strong>MOQ</strong><div>25 MT</div>
             </div>
-
-            <div style="min-width:320px;background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)">
-              <strong>UAE Importer</strong>
-              <div class="quote">“Quality consistent across shipments.”</div>
-            </div>
-
-            <div style="min-width:320px;background:#fff;padding:18px;border-radius:12px;box-shadow:var(--shadow)">
-              <strong>KSA Distributor</strong>
-              <div class="quote">“Reliable, repeat orders placed.”</div>
+            <div style="background:#fff;padding:10px;border-radius:10px;box-shadow:var(--shadow)">
+              <strong>Packing</strong><div>50 kg PP</div>
             </div>
           </div>
         </div>
+      </div>
 
-        <div style="display:flex;gap:8px;justify-content:center;margin-top:12px">
-          <button id="prev">Prev</button>
-          <button id="next">Next</button>
+      <div>
+        <div style="border-radius:12px;overflow:hidden;box-shadow:var(--shadow)">
+          <img src="assets/basmati1.jpg" alt="1121 Steam Basmati" style="width:100%;height:420px;object-fit:cover">
         </div>
       </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer id="contact">
+    <section id="quick">
+      <h2 style="color:var(--navy)">Why choose us</h2>
+      <div class="grid">
+        <div class="prod">
+          <h3>Consistent Quality</h3>
+          <p class="small">Strict quality checks, low moisture & clean lots for export.</p>
+        </div>
+        <div class="prod">
+          <h3>Export Experience</h3>
+          <p class="small">Shipments to UAE, KSA, Bangladesh — on-time deliveries.</p>
+        </div>
+        <div class="prod">
+          <h3>Secure Packing</h3>
+          <p class="small">50 kg PP bags, fumigation & proper stacking for containers.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 style="color:var(--navy)">Testimonials</h2>
+      <div class="testi">
+        <div class="card">
+          <strong>Global Buyer, Dubai</strong>
+          <p class="small">“Fast replies and consistent quality. Reordered twice.”</p>
+        </div>
+        <div class="card">
+          <strong>Saudi Importer</strong>
+          <p class="small">“Clear packaging, good coordination with shipper.”</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
       <div>
-        <strong style="color:var(--navy)">VS Rice Traders</strong>
-        <div>Uttar Pradesh, India</div>
-        <div>WhatsApp: +91 93362 58808</div>
-        <div>Email: vaibhav.rato@gmail.com</div>
+        <strong>VS Rice Traders</strong><br>
+        Uttar Pradesh, India
+      </div>
+      <div class="contact-card">
+        <div>📱 +91 93362 58808</div>
+        <div>✉️ vaibhav.rato@gmail.com</div>
+        <div style="margin-top:8px"><a href="products.html">View Products</a> • <a href="contact.html">Contact</a></div>
       </div>
     </footer>
 
   </div>
-
-  <!-- Testimonials JS -->
-  <script>
-    const list = document.getElementById('testList');
-    const next = document.getElementById('next');
-    const prev = document.getElementById('prev');
-    let idx = 0;
-    const total = list.children.length;
-
-    function show(i){
-      list.style.transform = 'translateX(' + (-i*100) + '%)';
-    }
-
-    next.onclick = ()=>{ idx = (idx+1)%total; show(idx); };
-    prev.onclick = ()=>{ idx = (idx-1+total)%total; show(idx); };
-
-    setInterval(()=>{ idx = (idx+1)%total; show(idx); }, 5000);
-  </script>
-
 </body>
 </html>
