@@ -25,7 +25,7 @@ UAE | Saudi Arabia | Qatar | Oman | Bahrain | Vietnam | Bangladesh | Africa Regi
 ## 📞 Contact Details
 **Owner:** Vaibhav Singh  
 **WhatsApp:** +91 9336258808  
-**Email:** vaibhav.rato@gmail.com  
+**Email:** vsricetraders@gmail.com  
 
 ---
 
