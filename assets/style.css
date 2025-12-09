@@ -1,0 +1,42 @@
+/* assets/style.css - shared CSS for all pages */
+:root{
+  --navy:#07243b; --gold:#c49a48; --muted:#6b7b86; --bg:#f6f7f8; --card:#fff;
+  --radius:14px; --shadow: 0 8px 30px rgba(2,18,28,0.08); --maxW:1100px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
+}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:#152935}
+.container{max-width:var(--maxW);margin:0 auto;padding:22px}
+
+/* header/nav */
+.header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:56px;width:56px;object-fit:contain;border-radius:8px}
+.nav{display:flex;gap:14px;align-items:center}
+.nav a{padding:8px 12px;border-radius:10px;color:var(--navy);font-weight:600}
+.nav a.cta{background:var(--navy);color:#fff}
+
+/* hero (index) */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:26px;align-items:center;padding:26px 0}
+.hero .card{background:var(--card);padding:20px;border-radius:16px;box-shadow:var(--shadow)}
+.hero h1{font-size:clamp(26px,4vw,40px);margin:0 0 10px;color:var(--navy)}
+.small{color:var(--muted);margin:0 0 16px}
+
+/* grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px;margin:20px 0}
+.prod{background:var(--card);padding:16px;border-radius:12px;box-shadow:var(--shadow);text-align:center}
+.prod img{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+
+/* testimonials */
+.testi{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
+.testi .card{padding:16px;border-radius:12px;background:var(--card);box-shadow:var(--shadow)}
+
+/* footer */
+footer{margin-top:30px;padding:18px 0;border-top:1px solid #e8eef2;color:var(--muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.contact-card{background:var(--card);padding:12px 14px;border-radius:12px;box-shadow:var(--shadow)}
+
+/* responsive */
+@media (max-width:880px){
+  .hero{grid-template-columns:1fr; padding:12px 0}
+  .testi{grid-template-columns:1fr}
+  .nav{gap:8px}
+}
